@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="desktop-wallpaper-post-it-notes-icon-sticky-notes.jpg" type="image/x-icon">
+
+    <title>Your Productive Day</title>
+    <link rel="stylesheet" href="todo2.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+
+    <section id="welcome-container">
+        <p id="welcome-line1">Welcome to<br>Your Productive Day! <span aria-label="Star Emoji" role="img">🌟</span></p>
+        <p id="welcome-line2">Let's Organize   <br>Your Best Day Together!<span aria-label="Sparkles Emoji" role="img">✨</span></p>
+    </section>
+
+    <h2>The Epic Battle of Getting Stuff Done...or Not<i class="fa-solid fa-trash" style="color: #3399ff;"></i></h2>
+
+    <div class="controls">
+        <input type="text" id="new-todo" placeholder="Add a new to-do" maxlength="62">
+        <button onclick="addTodo()">Add</button>
+    </div>
+
+    <div id="todo-container">
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="todo2js.js"></script>
+
+</body>
+
+</html>

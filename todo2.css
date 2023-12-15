@@ -1,0 +1,342 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('desktop-wallpaper-post-it-notes-icon-sticky-notes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; /* Default background size */
+    z-index: -1; /* Place it behind other content */
+    transition: background-size 0.5s ease; /* Add transition property */
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    body::before {
+        background-size: 140%; /* Decrease background size for small screens */
+    }
+
+    #welcome-line1,
+    #welcome-line2 {
+        font-size: 5vw; /* Increase font size for small screens */
+        top: 33%; /* Adjust the top position */
+        left: 21%; /* Adjust the left position */
+    }
+
+    /* Adjust the position of the image for small screens */
+    .responsive-img {
+        top: 70%; /* Adjust the top position */
+        left: 50%; /* Adjust the left position */
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Media query for screens between 601px and 1199px */
+@media (min-width: 601px) and (max-width: 1199px) {
+    #welcome-line1,
+    #welcome-line2 {
+        font-size: 2.8vw; /* Increase font size for screens between 601px and 1199px */
+        top: 25%; /* Adjust the top position */
+        left: 34%; /* Adjust the left position */
+    }
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    body::before {
+        background-size: 70%; /* Decrease background size for larger screens */
+    }
+
+    #welcome-line1,
+    #welcome-line2 {
+        font-size: 2.5vw; /* Decrease font size for larger screens */
+        top: 22%; /* Adjust the top position */
+        left: 36%; /* Adjust the left position */
+    }
+
+    /* Add transition for larger screens */
+    .responsive-img {
+        transition: transform 0.5s ease;
+    }
+}
+
+
+
+
+#welcome-line1, #welcome-line2 {
+    position: absolute;
+    margin-bottom: 10%;
+    margin-left: 0%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pacifico', cursive; /* Apply a handwritten font */
+    font-weight: normal; /* Adjust the font weight as needed */
+    text-align: center;
+    opacity: 0;
+    transform: rotate(-2deg);
+    opacity: 0;
+}
+
+
+
+/* styling for h2 */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('desktop-wallpaper-post-it-notes-icon-sticky-notes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%; /* Default background size */
+    z-index: -1; /* Place it behind other content */
+    transition: background-size 0.5s ease; /* Add transition property */
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    body::before {
+        background-size: 140%; /* Decrease background size for small screens */
+    }
+
+    #welcome-line1,
+    #welcome-line2 {
+        font-size: 5vw; /* Increase font size for small screens */
+        top: 33%; /* Adjust the top position */
+        left: 21%; /* Adjust the left position */
+    }
+
+    /* Adjust the position of the image for small screens */
+    .responsive-img {
+        top: 70%; /* Adjust the top position */
+        left: 50%; /* Adjust the left position */
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    body::before {
+        background-size: 70%; /* Decrease background size for larger screens */
+    }
+
+    #welcome-line1,
+    #welcome-line2 {
+        font-size: 2.5vw; /* Decrease font size for larger screens */
+        top: 22%; /* Adjust the top position */
+        left: 36%; /* Adjust the left position */
+    }
+
+    /* Add transition for larger screens */
+    .responsive-img {
+        transition: transform 0.5s ease;
+    }
+}
+
+
+
+
+#welcome-line1, #welcome-line2 {
+    position: absolute;
+    margin-bottom: 10%;
+    margin-left: 0%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pacifico', cursive; /* Apply a handwritten font */
+    text-align: center;
+    opacity: 0;
+    transform: rotate(-2deg);
+    opacity: 0;
+}
+
+
+
+/* styling for h2 */
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100; /* Adjust the font weight as needed */
+    font-size: 1.5vw; /* Adjust font size */
+    position: absolute;
+    top: 8%; /* Adjust the top position */
+    left: 35%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    transform: rotate(-3deg);
+    opacity: 0; /* Hide h2 initially */
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 3vw; /* Adjust font size for small screens */
+        top: 24%; /* Adjust the top position for small screens */
+        left: 20%; /* Adjust the left position for small screens */
+        transform: rotate(-3deg); /* Adjust rotation for small screens */
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 1199px) {
+    h2 {
+        font-size: 2vw; /* Adjust font size for medium screens */
+        top: 12%; /* Adjust the top position for medium screens */
+        left: 30%; /* Adjust the left position for medium screens */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 1.5vw; /* Adjust font size for larger screens */
+        top: 8%; /* Adjust the top position for larger screens */
+        left: 35%; /* Adjust the left position for larger screens */
+    }
+}
+
+
+
+
+.controls {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    margin-top: 588px;
+    transform: rotate(-2deg);
+}
+
+#new-todo {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin-right: 5px; /* Adjusted margin for a 10px gap */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3399ff; /* Blue for add button */
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px; /* Adjusted margin for a 10px gap */
+}
+
+
+.todo-checkbox {
+    transform: scale(1.5); /* Make the checkbox 1.5 as big */
+    margin-right: 8px; /* Adjust the margin to provide space between checkbox and label */
+}
+
+.todo-checkbox:checked + label {
+    text-decoration: line-through; /* Cross out the text when checkbox is checked */
+    opacity: 0.2; /* Lower the opacity for a faded effect */
+}
+
+/* konfeti šareni animacija */
+@keyframes confettiBurst {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .confetti {
+    position: absolute;
+    width: 4px; /* Adjust the size as needed */
+    height: 4px; /* Adjust the size as needed */
+    background-color: #ff0000; /* Use bright and colorful colors */
+    border-radius: 50%;
+    animation: confettiBurst 0.3s ease-out;
+  }
+
+  /* Add the following styles to prevent scrolling during confetti animation */
+body.confetti-active {
+    overflow: hidden;
+}
+
+.confetti-container {
+    overflow: hidden;
+}
+
+
+
+  /* center the todo list */
+  #todo-container {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    max-height: 300px; /* Set the maximum height for the entire todo list */
+    max-width: 300px;
+    transform: rotate(-2deg);
+
+}
+
+#todo-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    text-align: center; /* Center text within the list */
+}
+
+/* Update the styles for each todo item */
+#todo-list li {
+    margin: 10px 0; /* Add margin between each todo item */
+    padding: 14px; /* Add padding */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    width: 520px; /* Adjust the width as needed */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically within the li */
+    justify-content: flex-start; /* Space items evenly horizontally */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+    margin-left: -100px; /* You can adjust the value as needed */
+    transform: rotate(-0.6deg);
+
+}
+
+#todo-list li label {
+    margin-left: 10px;
+    text-align: left;
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+#todo-list li label:hover {
+    white-space: normal;
+    overflow: visible;
+}
+
+#todo-list li button {
+    position: absolute; /* Set the position of the delete button to absolute */
+    right: 10px; /* Adjust the right position as needed */
+    top: 50%; /* Align the button vertically in the middle */
+    transform: translateY(-50%); /* Center the button vertically */
+    padding: 10px 15px;
+    border: none;
+    background-color:white; /* Red for delete button */
+    color: #3399ff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
